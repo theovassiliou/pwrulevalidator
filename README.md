@@ -8,7 +8,7 @@ The Password Rule Validator a micro-services application that checks a given pas
 ### Architecture
 
 - API specification in OpenAPI / Swagger
-- rules set is a ressource (from OpenAPI perspective)
+- rules set aka validator is a ressource (from OpenAPI perspective)
 
 
 ### Features
@@ -37,3 +37,21 @@ The Password Rule Validator a micro-services application that checks a given pas
     password age	                    at most y day(s)
                                         at least x day(s)
     Passworthistorie                    password history of y
+
+
+## API Specification
+
+* Create a new validator in response to a valid POST request at /validator
+* Fetch  list of all validators in response to a valid GET request at /validators
+* Delete a validator in response to a valid DELETE request at /validator/{id}
+* Validate a password in response to a valid POST request at /validator/{id}
+* Updata a validator in response to a valid PUT request at /validator/{id}
+Validate a password 
+
+## Description
+
+In our simple application we will have a validator which has 
+
+* `id` - a unique identfifier for the validator
+* `ruleset` - a struct containing all parameters for the validator
+* `description` - a description of the validator
