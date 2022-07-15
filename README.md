@@ -1,5 +1,5 @@
-# pwrulemanager
-[[golang]]
+# pwrulevalidator
+[![Go Report Card](https://goreportcard.com/badge/github.com/theovassiliou/pwrulevalidator)](https://goreportcard.com/report/github.com/theovassiliou/pwrulevalidator)
 
 The Password Rule Validator a micro-services application that checks a given password against a set of configurable rules. 
 
