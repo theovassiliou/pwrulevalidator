@@ -8,7 +8,7 @@ type validator struct {
 }
 
 // * Validate a password in response to a valid POST request at /validator/{id}
-func (v *validator) Validate() error {
+func (v *validator) validate() error {
 	return errors.New("not implemented")
 }
 
